@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>聚合搜索（正经人王同学）</title> 
+ <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<style> 
+
+body
+{
+	background-color:#;
+}
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('http://static.runoob.com/images/mix/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+</style>
+</head>
+<body>
+
+
+
+<form name="f_g1" onsubmit="return(s_1())">
+<input onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="谷歌搜索（无需特殊网络）">
+</form>
+
+<hr>
+
+ 
+ <FORM name="f_g2" onsubmit="return(s_2())" >
+ 
+
+       <input onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="全球最大电子书库搜索">
+ 
+   </form>
+
+<hr>
+ 
+   <FORM name="f_g3" onsubmit="return(s_3())" class="navbar-form navbar-left" role="search">
+ 
+     <div class="form-group">
+ 
+       <input  onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="中国最大聚合影视资源搜索">
+ 
+     </div>
+ 
+     
+ 
+   </form>
+
+
+<hr>
+   <FORM name="f_g6" onsubmit="return(s_6())" class="navbar-form navbar-left" role="search">
+ 
+     <div class="form-group">
+ 
+       <input  onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="全网音乐在线听和支持无损下载">
+ 
+     </div>
+ 
+ 
+   </form>
+<hr>
+<script type="text/javascript">
+ 
+ function s_1()
+ 
+ {window.open("https://search.xn--pckl1n.tw/search?q="+encodeURI(f_g1.key.value));return false;};
+ 
+ function s_2()
+ 
+ {window.open("https://zh.b-ok.com/s/"+encodeURI(f_g2.key.value));return false;};
+ 
+ function s_3()
+ 
+ {window.open("https://cupfox.app/search?key="+encodeURI(f_g3.key.value));return false;};
+ 
+ function s_4()
+ 
+ {window.open("http://www.soku.com/v?keyword="+encodeURI(f_g4.key.value));return false;};
+ 
+ function s_5()
+ 
+ {window.open("http://cn.bing.com/search?q="+encodeURI(f_g5.key.value));return false;};
+ 
+ function s_6()
+ 
+ {window.open("http://tool.liumingye.cn/music/?page=audioPage&type=migu&name="+encodeURI(f_g6.key.value));return false;};
+ 
+ </script>
+</body>
+</html>
